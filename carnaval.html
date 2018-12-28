@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+	<html lang="en">
+<!--*******************************************************************
+author:         cintia ferrari schutt de assis
+version:        03/29/2018
+description:    final project, complete website included the 
+                following elements:
+                1) 15 pages interlinked
+                2) a clear topic apparent on the home page
+                3) a clickable site map (separate page)
+                4) at least 5 images
+                5) an example of tables (subnav LANGUAGE)
+                6) text and presentation elements using CSS
+                7) a working web form
+                8) a link to my valid email address
+                9) one Javascript element (image swapping)                
+*******************************************************************-->        
+          
+	<head>
+		<meta charset="utf-8">
+		<title>Carnival</title>
+        <link rel="stylesheet" href="css/global.css">
+	</head>
+        
+	<body>
+        <div id="wrapper">
+            
+            <!--*************** HEADER BEGINS ***************-->
+        
+            <header>
+                              
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                
+                <div class="mySlides fade">                    
+                    <img src="images/trancoso.jpg" width="1100" height="250" alt="trancoso" class="header_image">                  
+                </div>
+
+                <div class="mySlides fade">                    
+                    <img src="images/rio.jpg" width="1100" height="250" alt="rio" class="header_image">                    
+                </div>
+
+                <div class="mySlides fade">                    
+                    <img src="images/brasilia.jpg" width="1100" height="250" alt="brasilia" class="header_image">                  
+                </div>
+                    
+                <div class="mySlides fade">                    
+                    <img src="images/rio2.jpg" width="1100" height="250" alt="rio" class="header_image">                  
+                </div>                                        
+                    
+                <div class="mySlides fade">                    
+                    <img src="images/ceara.jpg" width="1100" height="250" alt="ceara" class="header_image">                  
+                </div>    
+                    
+                <div class="mySlides fade">                    
+                    <img src="images/flag.jpg" width="1100" height="250" alt="flag" class="header_image">                  
+                </div>                       
+                
+                </div>
+                
+                <noscript>Please enable javascript if you want the full, awesome web experience.</noscript>
+           
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");                        
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) {slideIndex = 1}    
+                        
+                        slides[slideIndex-1].style.display = "block";                          
+                        setTimeout(showSlides, 3000); // Change image every 3 seconds
+                    }
+                    
+                </script>
+                              
+                
+            </header>  
+        
+        <!--*************** HEADER ENDS ***************-->
+            
+            
+            <!--*************** NAVEGATION BEGINS ***************-->
+        
+            <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><span>Destinations</span>
+                    <ul>
+                        <li><a href="north.html">North</a></li>
+                        <li><a href="northeast.html">Northeast</a></li>
+                        <li><a href="midwest.html">Midwest</a></li>
+                        <li><a href="southeast.html">Southeast</a></li>
+                        <li><a href="south.html">South</a></li>
+                         
+                    </ul>
+                </li>
+                <li><span>Events</span>
+                    <ul>
+                        <li><span class="navcurrent">Carnival</span></li>
+                        <li><a href="nataluz.html">Natal Luz</a></li>
+                        <li><a href="artbienal.html">Art Biennial</a></li>
+                        <li><a href="newyear.html">New Year's Eve</a></li>
+                    </ul>
+                </li>
+                <li><span>Planning</span>
+                    <ul>
+                        <li><a href="wheater.html">Wheater</a></li>
+                        <li><a href="visaanddocs.html">Visa and Docs</a></li>
+                        <li><a href="language.html">Language</a></li>
+                        <li><a href="security.html">Security</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>            
+            </ul>
+        </nav>
+        
+        <!--*************** NAVEGATION ENDS ***************-->      
+            
+           
+        
+        <!--*************** CONTENT BEGINS ***************-->
+        
+            <main>
+                
+                <div class="div_page">
+                    <h1>Carnival</h1>
+                    <img src="images/carnaval.jpg" width="604" height="428" alt="carnaval" class="imagedestinations">   
+                    <p>Carnival is one of the events that most attract visitors to the State of Rio de Janeiro. <br><br>
+                        The greatest moment of this party usually celebrated in February, is the parade at Passarela Professor Darcy Ribeiro, the Sambódromo of Marquês de Sapucaí.<br><br>
+
+                    The Sambódromo was designed by the architecture Oscar Niemeyer and was inaugurated in 1984. For four consecutive days of Carnival, more than twelve samba schools parade with their floats, tireless dancers, lively percussion and luxurious and colourful costumes, cheering the revellers all through the night.<br><br>
+
+                    Known as the largest party on the planet, the Carnival in Rio de Janeiro also gathers people in other parts of the city. <br><br>
+                        
+                    This gathering is called street blocks. Without the grandiosity of Sapucaí parade, the revellers in these blocks dance and have fun in the streets, wearing costumes or not.<br><br>
+
+                    During the preparation for the Carnival, it is possible to take part on cheerful samba school rehearsals.</p>
+                        
+                </div>                
+                
+            </main>
+        
+        <!--*************** CONTENT ENDS ***************-->
+        
+        
+        <!--*************** FOOTER BEGINS ***************-->
+        
+            <footer> 
+                <hr>
+                <p>Copyleft &copy; Let's go to Brazil - Tourism Agency 2018</p>
+                <ul class="footer-nav">                      
+                    <li><a href="sitemap.html">Site Map</a></li>                       
+                    <li><a href="contact.html">Contact us</a></li>
+                   </ul>
+            
+            </footer>
+        
+        <!--*************** FOOTER ENDS ***************-->
+        </div>
+	</body>
+</html>

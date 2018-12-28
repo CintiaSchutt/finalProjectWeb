@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+	<html lang="en">
+<!--*******************************************************************
+author:         cintia ferrari schutt de assis
+version:        03/29/2018
+description:    final project, complete website included the 
+                following elements:
+                1) 15 pages interlinked
+                2) a clear topic apparent on the home page
+                3) a clickable site map (separate page)
+                4) at least 5 images
+                5) an example of tables (subnav LANGUAGE)
+                6) text and presentation elements using CSS
+                7) a working web form
+                8) a link to my valid email address
+                9) one Javascript element (image swapping)                
+*******************************************************************-->        
+        
+	<head>
+		<meta charset="utf-8">
+		<title>Northeast</title> 
+        <link rel="stylesheet" href="css/global.css"> 
+	</head>
+        
+	<body>
+        <div id="wrapper">
+            
+            
+            <!--*************** HEADER BEGINS ***************-->
+        
+            <header>
+                              
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                
+                <div class="mySlides fade">                    
+                    <img src="images/trancoso.jpg" width="1100" height="250" alt="trancoso" class="header_image">                  
+                </div>
+
+                <div class="mySlides fade">                    
+                    <img src="images/rio.jpg" width="1100" height="250" alt="rio" class="header_image">                    
+                </div>
+
+                <div class="mySlides fade">                    
+                    <img src="images/brasilia.jpg" width="1100" height="250" alt="brasilia" class="header_image">                  
+                </div>
+                    
+                <div class="mySlides fade">                    
+                    <img src="images/rio2.jpg" width="1100" height="250" alt="rio" class="header_image">                  
+                </div>                                        
+                    
+                <div class="mySlides fade">                    
+                    <img src="images/ceara.jpg" width="1100" height="250" alt="ceara" class="header_image">                  
+                </div>    
+                    
+                <div class="mySlides fade">                    
+                    <img src="images/flag.jpg" width="1100" height="250" alt="flag" class="header_image">                  
+                </div>                       
+                
+                </div>
+                
+                <noscript>Please enable javascript if you want the full, awesome web experience.</noscript>
+           
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");                        
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) {slideIndex = 1}    
+                        
+                        slides[slideIndex-1].style.display = "block";                          
+                        setTimeout(showSlides, 3000); // Change image every 3 seconds
+                    }
+                    
+                </script>
+                              
+                
+            </header>  
+        
+        <!--*************** HEADER ENDS ***************-->
+        
+        
+        <!--*************** NAVEGATION BEGINS ***************-->
+        
+            <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><span>Destinations</span>
+                    <ul>
+                        <li><a href="north.html">North</a></li>
+                        <li><span class="navcurrent">Northeast</span></li>
+                        <li><a href="midwest.html">Midwest</a></li>
+                        <li><a href="southeast.html">Southeast</a></li> 
+                        <li><a href="south.html">South</a></li>
+                        
+                    </ul>
+                </li>
+                <li><span>Events</span>
+                    <ul>
+                        <li><a href="carnaval.html">Carnival</a></li>
+                        <li><a href="nataluz.html">Natal Luz</a></li>
+                        <li><a href="artbienal.html">Art Biennial</a></li>
+                        <li><a href="newyear.html">New Year's Eve</a></li>
+                    </ul>
+                </li>
+                <li><span>Planning</span>
+                    <ul>
+                        <li><a href="wheater.html">Wheater</a></li>
+                        <li><a href="visaanddocs.html">Visa and Docs</a></li>
+                        <li><a href="language.html">Language</a></li>
+                        <li><a href="security.html">Security</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>            
+            </ul>
+        </nav>
+        
+        <!--*************** NAVEGATION ENDS ***************-->
+        
+        
+            
+        
+        <!--*************** CONTENT BEGINS ***************-->
+        
+            <main>
+                
+                <div class="div_page">
+                <h1>City of Trancoso</h1>
+                
+                    
+                <p>Located high on a hill, the small village of Trancoso is a district of Porto Seguro and one of the most sought after locations on the coast of Bahia. It is an ideal place to escape the hustle and bustle of big cities and rest at beaches with fine sand and warm water.<br><br>
+                
+                The best tour in Trancoso are the beaches, with stands where you can drink and eat typical Bahian food, like the acarajé (fried beans dumpling stuffed with dried shrimp and seasonings). Ten minutes from the village is the Praia dos Coqueiros, with reefs that form natural water pools at low tide and are perfect for diving.<br><br>
+                
+                </p>
+                
+                <h2>Place to go:</h2>
+                <img src="images/praiadoespelho.jpg" width="480" height="270" alt="praia do espelho" class="imagedestinations"> 
+                
+                <h3>Praia do Espelho</h3>
+                
+                <p>The Espelho beach (or Curuípe), located 22 km from downtown Trancoso, is full of charm and sophistication. This is an exotic and peaceful beach, with a calm sea of a greenish color, where beautiful natural pools are formed.<br><br>
+
+                In the crystal-clear sea, you can find coral reef formations and natural pools, appreciated by those who enjoy diving. In the sand, coconut trees, cliffs and observatories that offer a panoramic view of the whole place.<br><br>
+               </p>                
+                
+                </div>
+                
+                <div class="div_page">
+                
+                <h1>City of Chapada Diamantina</h1>                
+                    
+                <p>The Chapada displays a scene of towering rock formations and vast plains covered with typical vegetation from the Cerrado biome.<br><br>
+
+                Today, the right destination for trekking lovers, the region was once occupied by treasure hunters. Hence the name, in reference to the exploration of diamonds in the region.<br><br>
+                
+                Tourism in the Chapada offers activities for different audiences and with varying degrees of adrenaline. Hiking trails, waterfalls, caves, wells, observatories, is everything that is out there. For you to enjoy the most of it, organize your visit according to the length of stay and preferred practices.</p>
+                
+                <h2>Place to go:</h2>
+                
+                <h3>National Park of Chapada Diamantina</h3>
+                <img src="images/chapada-diamantina.jpg" width="480" height="320" alt="chapada diamantina" class="imagedestinations"> 
+                <p>Among the ecological parks of Brasil, the National Park of Chapada Diamantina, in Bahia, is one of the most beautiful.<br><br> With an area of 152,000 hectares, it was opened in 1985 with the aim of preserving the local nature, and covers the municipalities of Lençóis, Iraquara, Palmeiras, Mucugê, Ibicoara, Andaraí and Morro do Chapéu.<br><br>
+                
+                The forms of the relief allow the formation of caves and caverns, such as the Torrinha and Pratinha which, along with others, form one of the largest underground trails across the country.<br><br> The trails are good for trekking and the mountains, great for rock climbing. The mountain ranges reach up to 1700 meters. The Chapada Diamantina region houses the Cachoeira da Fumaça (Smoke Waterfall), the second highest of Brasil, with 380 meters.</p>                
+                
+                </div>
+                
+                
+            </main>
+        
+        <!--*************** CONTENT ENDS ***************-->
+        
+        
+        <!--*************** FOOTER BEGINS ***************-->
+        
+            <footer> 
+                <hr>
+                <p>Copyleft &copy; Let's go to Brazil - Tourism Agency 2018</p>
+                <ul class="footer-nav">                      
+                    <li><a href="sitemap.html">Site Map</a></li>                       
+                    <li><a href="contact.html">Contact us</a></li>
+                   </ul>
+            
+            </footer>
+        
+        <!--*************** FOOTER ENDS ***************-->
+        </div>
+	</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+	<html lang="en">
+<!--*******************************************************************
+author:         cintia ferrari schutt de assis
+version:        03/29/2018
+description:    final project, complete website included the 
+                following elements:
+                1) 15 pages interlinked
+                2) a clear topic apparent on the home page
+                3) a clickable site map (separate page)
+                4) at least 5 images
+                5) an example of tables (subnav LANGUAGE)
+                6) text and presentation elements using CSS
+                7) a working web form
+                8) a link to my valid email address
+                9) one Javascript element (image swapping)                
+*******************************************************************-->        
+        
+	<head>
+		<meta charset="utf-8">
+		<title>Midwest</title>
+        <link rel="stylesheet" href="css/global.css"> 
+	</head>
+        
+	<body>
+        <div id="wrapper">
+            
+           
+          <!--*************** HEADER BEGINS ***************-->
+        
+            <header>
+                              
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                
+                <div class="mySlides fade">                    
+                    <img src="images/trancoso.jpg" width="1100" height="250" alt="trancoso" class="header_image">                  
+                </div>
+
+                <div class="mySlides fade">                    
+                    <img src="images/rio.jpg" width="1100" height="250" alt="rio" class="header_image">                    
+                </div>
+
+                <div class="mySlides fade">                    
+                    <img src="images/brasilia.jpg" width="1100" height="250" alt="brasilia" class="header_image">                  
+                </div>
+                    
+                <div class="mySlides fade">                    
+                    <img src="images/rio2.jpg" width="1100" height="250" alt="rio" class="header_image">                  
+                </div>                                        
+                    
+                <div class="mySlides fade">                    
+                    <img src="images/ceara.jpg" width="1100" height="250" alt="ceara" class="header_image">                  
+                </div>    
+                    
+                <div class="mySlides fade">                    
+                    <img src="images/flag.jpg" width="1100" height="250" alt="flag" class="header_image">                  
+                </div>                       
+                
+                </div>
+                
+                <noscript>Please enable javascript if you want the full, awesome web experience.</noscript>
+           
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");                        
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) {slideIndex = 1}    
+                        
+                        slides[slideIndex-1].style.display = "block";                          
+                        setTimeout(showSlides, 3000); // Change image every 3 seconds
+                    }
+                    
+                </script>
+                              
+                
+            </header>  
+        
+        <!--*************** HEADER ENDS ***************-->
+        
+         <!--*************** NAVEGATION BEGINS ***************-->
+        
+            <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><span>Destinations</span>
+                    <ul>
+                        <li><a href="north.html">North</a></li>
+                        <li><a href="northeast.html">Northeast</a></li>
+                        <li><span class="navcurrent">Midwest</span></li>
+                        <li><a href="southeast.html">Southeast</a></li>
+                        <li><a href="south.html">South</a></li>
+                         
+                    </ul>
+                </li>
+                <li><span>Events</span>
+                    <ul>
+                        <li><a href="carnaval.html">Carnival</a></li>
+                        <li><a href="nataluz.html">Natal Luz</a></li>
+                        <li><a href="artbienal.html">Art Biennial</a></li>
+                        <li><a href="newyear.html">New Year's Eve</a></li>
+                    </ul>
+                </li>
+                <li><span>Planning</span>
+                    <ul>
+                        <li><a href="wheater.html">Wheater</a></li>
+                        <li><a href="visaanddocs.html">Visa and Docs</a></li>
+                        <li><a href="language.html">Language</a></li>
+                        <li><a href="security.html">Security</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>            
+            </ul>
+        </nav>
+        
+        <!--*************** NAVEGATION ENDS ***************-->
+        
+        
+            
+        
+        <!--*************** CONTENT BEGINS ***************-->
+        
+            <main>
+                
+                <div class="div_page">                    
+                <h1>City of Bonito</h1>
+                
+                <p>Bonito, in the State of Mato Grosso do Sul, is one of the main destinations for ecotourism and adventure tourism in Brazil. <br><br> In the crystal clear waters of its rivers, the colors of the fish make for an incredible contrast with the intense green of the native forest.<br><br>
+                
+                You can visit the city at any time of the year, but the ideal period is between the months of December and March, during the rainy season. During this period, the flora and fauna proliferate, the levels of the rivers increase and the waterfalls have strong, abundant waters.</p>
+                
+                <h2>Place to go:</h2>
+                
+                <h3>Gruta do Lago Azul (Blue Lake Cave)</h3>
+                <img src="images/bonito.jpg" width="540" height="360" alt="bonito" class="imagedestinations">  
+                <p>This beautiful place holds a delightful view with impressive rock formations and an intense blue color lake.<br><br>
+                Located 20 km from the city of Bonito, in the state of Mato Grosso do Sul, Gruta do Lago Azul has several speleothems and typical cave rock formations. <br><br>
+
+                Inside, there is a stunning intense blue lake with 80 meters depth. Its dimensions make it one of the largest flooded cavities on the planet. At its bottom, it was found prehistoric animal fossils such as giant sloths and saber-toothed tiger.<br><br>
+
+                Gruta do Lago Azul is listed as natural monument and preserve area due to its beauty and fragility.
+
+                You need to cross a trail with 100 meters slope and go down 300 steps in a rustic staircase to the lake bed.</p>
+                
+                
+                </div>
+                
+                <div class="div_page">                
+                
+                <h1>City of Brasilia</h1>
+                
+                <p>A young city, Brasília was open in 1960 by the current president Juscelino Kubitschek. Built to be the Brazilian Government’s headquarters, in the Planalto Central, the new capital was a bold project and became a symbol of urban planning and modern architecture in the 20th century.<br><br>
+
+                The city’s basic outline, designed by urbanist Lucio Costa and architect Oscar Niemeyer, was named Pilot Plan. The design resembles the figure of a plane and was declared a World Cultural Heritage by Unesco. Brasília has the largest protected area in the world - 112.5 square kilometers.<br><br>
+                
+                </p>
+                
+                <h2>Place to go:</h2>                
+                
+                <h3>Praça dos Três Poderes</h3>
+                <img src="images/brasilia-df.jpg" width="500" height="333" alt="brasilia" class="imagedestinations"> 
+                <p>An open air museum full of architectural treasures.<br><br>
+                
+                Designed by Oscar Niemeyer and Lucio Costa, the Praça dos Três Poderes is one of Brasília’s main attractions and headquarters of the three powers of State: the Palácio do Planalto (Presidential Palace), the Supremo Tribunal Federal - STF (Supreme Court) and the Congresso Nacional (National Congress).<br><br>
+
+                The Três Poderes cultural center, subject to the local Cultural Secretary, manages the activities of the three cultural spaces of the plaza.<br><br> They are: the Museu Histórico da Cidade (the city’s historical museum that contains historical records on the city’s construction), the Espaço Lucio Costa (with an enormous scale model of Brasília) and the Panteão da Pátria (with art works honoring national heroes).</p>
+                
+                </div>  
+                
+                
+            </main>
+        
+        <!--*************** CONTENT ENDS ***************-->
+        
+        
+        <!--*************** FOOTER BEGINS ***************-->
+        
+            <footer> 
+                <hr>
+                <p>Copyleft &copy; Let's go to Brazil - Tourism Agency 2018</p>
+                <ul class="footer-nav">                      
+                    <li><a href="sitemap.html">Site Map</a></li>                       
+                    <li><a href="contact.html">Contact us</a></li>
+                   </ul>
+            
+            </footer>
+        
+        <!--*************** FOOTER ENDS ***************-->
+        </div>
+	</body>
+</html>

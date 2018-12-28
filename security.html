@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+	<html lang="en">
+<!--*******************************************************************
+author:         cintia ferrari schutt de assis
+version:        03/29/2018
+description:    final project, complete website included the 
+                following elements:
+                1) 15 pages interlinked
+                2) a clear topic apparent on the home page
+                3) a clickable site map (separate page)
+                4) at least 5 images
+                5) an example of tables (subnav LANGUAGE)
+                6) text and presentation elements using CSS
+                7) a working web form
+                8) a link to my valid email address
+                9) one Javascript element (image swapping)                
+*******************************************************************-->           
+             
+	<head>
+		<meta charset="utf-8">
+		<title>Security</title>
+        <link rel="stylesheet" href="css/global.css">
+	</head>
+        
+	<body>
+        <div id="wrapper">
+            
+            <!--*************** HEADER BEGINS ***************-->
+        
+            <header>
+                              
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                
+                <div class="mySlides fade">                    
+                    <img src="images/trancoso.jpg" width="1100" height="250" alt="trancoso" class="header_image">                  
+                </div>
+
+                <div class="mySlides fade">                    
+                    <img src="images/rio.jpg" width="1100" height="250" alt="rio" class="header_image">                    
+                </div>
+
+                <div class="mySlides fade">                    
+                    <img src="images/brasilia.jpg" width="1100" height="250" alt="brasilia" class="header_image">                  
+                </div>
+                    
+                <div class="mySlides fade">                    
+                    <img src="images/rio2.jpg" width="1100" height="250" alt="rio" class="header_image">                  
+                </div>                                        
+                    
+                <div class="mySlides fade">                    
+                    <img src="images/ceara.jpg" width="1100" height="250" alt="ceara" class="header_image">                  
+                </div>    
+                    
+                <div class="mySlides fade">                    
+                    <img src="images/flag.jpg" width="1100" height="250" alt="flag" class="header_image">                  
+                </div>                       
+                
+                </div>
+                
+                <noscript>Please enable javascript if you want the full, awesome web experience.</noscript>
+           
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");                        
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) {slideIndex = 1}    
+                        
+                        slides[slideIndex-1].style.display = "block";                          
+                        setTimeout(showSlides, 3000); // Change image every 3 seconds
+                    }
+                    
+                </script>
+                              
+                
+            </header>  
+        
+        <!--*************** HEADER ENDS ***************-->   
+            
+            
+            
+            <!--*************** NAVEGATION BEGINS ***************-->
+        
+            <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><span>Destinations</span>
+                    <ul>
+                        <li><a href="north.html">North</a></li>
+                        <li><a href="northeast.html">Northeast</a></li>
+                        <li><a href="midwest.html">Midwest</a></li>
+                        <li><a href="southeast.html">Southeast</a></li> 
+                        <li><a href="south.html">South</a></li>
+                        
+                    </ul>
+                </li>
+                <li><span>Events</span>
+                    <ul>
+                        <li><a href="carnaval.html">Carnival</a></li>
+                        <li><a href="nataluz.html">Natal Luz</a></li>
+                        <li><a href="artbienal.html">Art Biennial</a></li>
+                        <li><a href="newyear.html">New Year's Eve</a></li>
+                    </ul>
+                </li>
+                <li><span>Planning</span>
+                    <ul>
+                        <li><a href="wheater.html">Wheater</a></li>
+                        <li><a href="visaanddocs.html">Visa and Docs</a></li>
+                        <li><a href="language.html">Language</a></li>
+                        <li><span class="navcurrent">Security</span></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>            
+            </ul>
+        </nav>
+        
+        <!--*************** NAVEGATION ENDS ***************-->        
+        
+         
+        
+        <!--*************** CONTENT BEGINS ***************-->
+        
+            <main>
+                <h1>Security</h1>
+                <p>Most tourists have a good experience when arriving in Brazil, but, especially in the big cities, you must be careful not to become targeted by thugs. See below our tips about safety during your trip:<p></p>
+                    <ul class="ul_security">
+                        <li class="ul_li_security">Upon arriving at the airport, look for registered cabs.</li>
+                        <li class="ul_li_security">Whenever you need to open your wallet in public, avoid exposing big cash notes.</li>
+                        <li class="ul_li_security">Do not place your wallet or your phone in the back pockets of your pants, especially in places that are very busy and full.</li>
+                        <li class="ul_li_security">Do not carry large amounts of cash in your wallet, purse or bag. Take only small amounts in the country’s currency for daily expenditures.</li>
+                        <li class="ul_li_security">If you have to take a lot of money, keep it in bags used inside your clothing, closed with zippers or velcro strap and tied with an elastic around your waist.</li>
+                        <li class="ul_li_security">Avoid leaving with important documents and, if you have more than one credit card, take only one. In case your credit card gets stolen, you will have another card for future spending.</li>
+                        <li class="ul_li_security">Leave your passport where you are staying and take only a certified copy of it.</li>
+                        <li class="ul_li_security">Use the safe where you are staying, if the place has one, to keep your money, original passport, credit cards and other important items.</li>
+                        <li class="ul_li_security">Most thefts occur in places where there are large concentrations of people, like markets, subway stations, bus stations and full buses. Luggage theft is also common in airport lounges. Keep an eye out.</li>
+                        <li class="ul_li_security">Avoid walking through empty places or neighborhoods indicated as dangerous by the local residents. This advice is especially important in large cities and to people who are travelling alone.</li>
+                        <li class="ul_li_security">Be wary of people who offer a ride in a non-registered cab, at the airport or in any other location.</li>
+                        <li class="ul_li_security">If you go to the beach, don’t leave your belongings in the sand while you go into the water.</li>
+                        <li class="ul_li_security">If you rent a car, don’t leave any luggage or bags visible inside. If this is unavoidable, try to park the vehicle in a safe place, where there is policing.</li>
+                
+                    </ul>
+            </main>
+        
+        <!--*************** CONTENT ENDS ***************-->
+        
+        
+        <!--*************** FOOTER BEGINS ***************-->
+        
+            <footer> 
+                <hr>
+                <p>Copyleft &copy; Let's go to Brazil - Tourism Agency 2018</p>
+                <ul class="footer-nav">                      
+                    <li><a href="sitemap.html">Site Map</a></li>                       
+                    <li><a href="contact.html">Contact us</a></li>
+                   </ul>
+            
+            </footer>
+            
+        <!--*************** FOOTER ENDS ***************-->
+        </div>
+	</body>
+</html>

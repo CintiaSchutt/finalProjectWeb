@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+	<html lang="en">
+<!--*******************************************************************
+author:         cintia ferrari schutt de assis
+version:        03/29/2018
+description:    final project, complete website included the 
+                following elements:
+                1) 15 pages interlinked
+                2) a clear topic apparent on the home page
+                3) a clickable site map (separate page)
+                4) at least 5 images
+                5) an example of tables (subnav LANGUAGE)
+                6) text and presentation elements using CSS
+                7) a working web form
+                8) a link to my valid email address
+                9) one Javascript element (image swapping)                
+*******************************************************************-->        
+            
+        
+	<head>
+		<meta charset="utf-8">
+		<title>Southeast</title> 
+        <link rel="stylesheet" href="css/global.css"> 
+	</head>
+        
+	<body>
+        <div id="wrapper">
+            
+            
+            <!--*************** HEADER BEGINS ***************-->
+        
+            <header>
+                              
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                
+                <div class="mySlides fade">                    
+                    <img src="images/trancoso.jpg" width="1100" height="250" alt="trancoso" class="header_image">                  
+                </div>
+
+                <div class="mySlides fade">                    
+                    <img src="images/rio.jpg" width="1100" height="250" alt="rio" class="header_image">                    
+                </div>
+
+                <div class="mySlides fade">                    
+                    <img src="images/brasilia.jpg" width="1100" height="250" alt="brasilia" class="header_image">                  
+                </div>
+                    
+                <div class="mySlides fade">                    
+                    <img src="images/rio2.jpg" width="1100" height="250" alt="rio" class="header_image">                  
+                </div>                                        
+                    
+                <div class="mySlides fade">                    
+                    <img src="images/ceara.jpg" width="1100" height="250" alt="ceara" class="header_image">                  
+                </div>    
+                    
+                <div class="mySlides fade">                    
+                    <img src="images/flag.jpg" width="1100" height="250" alt="flag" class="header_image">                  
+                </div>                       
+                
+                </div>
+                
+                <noscript>Please enable javascript if you want the full, awesome web experience.</noscript>
+           
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");                        
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) {slideIndex = 1}    
+                        
+                        slides[slideIndex-1].style.display = "block";                          
+                        setTimeout(showSlides, 3000); // Change image every 3 seconds
+                    }
+                    
+                </script>
+                              
+                
+            </header>  
+        
+        <!--*************** HEADER ENDS ***************-->
+        
+        <!--*************** NAVEGATION BEGINS ***************-->
+        
+            <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><span>Destinations</span>
+                    <ul>
+                        <li><a href="north.html">North</a></li>
+                        <li><a href="northeast.html">Northeast</a></li>
+                        <li><a href="midwest.html">Midwest</a></li>
+                        <li><span class="navcurrent">Southeast</span></li> 
+                        <li><a href="south.html">South</a></li>
+                        
+                    </ul>
+                </li>
+                <li><span>Events</span>
+                    <ul>
+                        <li><a href="carnaval.html">Carnival</a></li>
+                        <li><a href="nataluz.html">Natal Luz</a></li>
+                        <li><a href="artbienal.html">Art Biennial</a></li>
+                        <li><a href="newyear.html">New Year's Eve</a></li>
+                    </ul>
+                </li>
+                <li><span>Planning</span>
+                    <ul>
+                        <li><a href="wheater.html">Wheater</a></li>
+                        <li><a href="visaanddocs.html">Visa and Docs</a></li>
+                        <li><a href="language.html">Language</a></li>
+                        <li><a href="security.html">Security</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>            
+            </ul>
+        </nav>
+        
+        <!--*************** NAVEGATION ENDS ***************-->        
+            
+        
+        <!--*************** CONTENT BEGINS ***************-->
+        
+            <main>
+                <div class="div_page">
+                    
+                <h1>City of Rio de Janeiro</h1>
+                
+                <p>Stunning natural sceneries, a free-spirited and welcoming people that transform anything into a party, and world-famous iconic monuments. These are the elements that make Rio de Janeiro a one-of-a-kind and unforgettable destination.<br><br>
+
+                The enviable collections in Rio’s museums hold fascinating treasures telling the tale of its 450 years of history. Land of the Carnaval and Samba, the city also offers countless theaters, concert venues, business centers and restaurants open year-round.<br><br>
+
+                But it is the combination between geographical traits – the sea, mountains and forests – and human culture that makes Rio de Janeiro such a unique city. Almost the entire city is surrounded by dazzling landscapes. Rio was the world’s first city to be listed as Cultural Heritage of Humanity by UNESCO.</p>
+                
+                <h2>Place to go:</h2>
+                
+                <h3>Cristo Redentor</h3>
+                <img src="images/cristo.jpg" width="600" height="370" alt="cristo redentor" class="imagedestinations">  
+                <p>Considered one of the Seven Wonders of the Modern World, Christ the Redeemer is a majestic statue at the Corcovado Hilltop.<br><br>
+
+                The monument represents the faith and compassion of cariocas (as those born in Rio are nicknamed) and it is a definite must-see for anyone visiting Rio.<br><br>
+
+                From the top – 710 meters above sea level –, visitors enjoy one of the most astonishing views of the Wonderful City, including Pão de Açúcar, the Guanabara Bay, the Botafogo Coast, and the Rodrigo de Freitas Lagoon.<br><br>
+
+                The world’s largest art deco statue raised 38 meters up into the skies, Christ the Redeemer is located in the Tijuca National Park area, which features other equally beautiful sights, such as Pedra da Gávea and the Chinese View.<br><br>
+
+                Carved in soapstone, the monument celebrates its 85th anniversary in October 2016 and is known among the locals as “Rio’s Wonder”.</p>               
+                
+                    
+                </div>
+                
+                <div class="div_page">
+                
+                <h1>City of Diamantina</h1>
+                
+                <p>Diamantina, from the top of its 300 years, has an extremely rich and well-preserved architectural, cultural and natural heritage. <br><br>Dating back from the first half of the 18th century, its origin is linked to the exploitation of gold and diamond. The name Diamantina is a reference to the huge amount of diamonds extracted in the region.<br><br>
+
+                The Baroque colonial mansions and churches are witnesses of this secular period of effervescence and wealth. In 1999, Diamantina was listed as World’s Cultural Heritage by UNESCO.</p>
+                
+                <h2>Place to go:</h2>
+                
+                <h3>Biribiri State Park</h3>
+                <img src="images/diamantina.jpg" width="550" height="346" alt="diamantina" class="imagedestinations"> 
+                <p>If you go to Diamantina, Minas Gerais, and likes to feel close to nature, make sure to include the Biribiri State Park in your itinerary.<br><br> There are about 17000 hectares of virgin forests, immense walls, beautiful waterfalls and cave paintings that tell the story of our ancestors.<br><br>
+
+                The Park is 15 Km from downtown Diamantina, in the region of the Serra do Espinhaço (Espinhaço mountain range), with painted rock formations which will make you feel in prehistory. According to archaeological studies, the paintings were made by nomadic indigenous people who fished in the region.<br><br>
+
+                The Park is also home the village of Biribiri, developed from a dissolved textile factory from the late 19th century and protected by the State Institute of Historical and Artistic Heritage of Minas Gerais.</p>                
+                
+                </div>
+                
+                
+            </main>
+        
+        <!--*************** CONTENT ENDS ***************-->
+        
+        
+        <!--*************** FOOTER BEGINS ***************-->
+        
+            <footer> 
+                <hr>
+                <p>Copyleft &copy; Let's go to Brazil - Tourism Agency 2018</p>
+                <ul class="footer-nav">                      
+                    <li><a href="sitemap.html">Site Map</a></li>                       
+                    <li><a href="contact.html">Contact us</a></li>
+                   </ul>
+            
+            </footer>
+        
+        <!--*************** FOOTER ENDS ***************-->
+        </div>
+	</body>
+</html>

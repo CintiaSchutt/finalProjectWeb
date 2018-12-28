@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+	<html lang="en">
+<!--*******************************************************************
+author:         cintia ferrari schutt de assis
+version:        03/29/2018
+description:    final project, complete website included the 
+                following elements:
+                1) 15 pages interlinked
+                2) a clear topic apparent on the home page
+                3) a clickable site map (separate page)
+                4) at least 5 images
+                5) an example of tables (subnav LANGUAGE)
+                6) text and presentation elements using CSS
+                7) a working web form
+                8) a link to my valid email address
+                9) one Javascript element (image swapping)                
+*******************************************************************-->        
+          
+        
+	<head>
+		<meta charset="utf-8">
+		<title>South</title> 
+        <link rel="stylesheet" href="css/global.css"> 
+	</head>
+        
+	<body>
+        <div id="wrapper">
+            
+            <!--*************** HEADER BEGINS ***************-->
+        
+            <header>
+                              
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                
+                <div class="mySlides fade">                    
+                    <img src="images/trancoso.jpg" width="1100" height="250" alt="trancoso" class="header_image">                  
+                </div>
+
+                <div class="mySlides fade">                    
+                    <img src="images/rio.jpg" width="1100" height="250" alt="rio" class="header_image">                    
+                </div>
+
+                <div class="mySlides fade">                    
+                    <img src="images/brasilia.jpg" width="1100" height="250" alt="brasilia" class="header_image">                  
+                </div>
+                    
+                <div class="mySlides fade">                    
+                    <img src="images/rio2.jpg" width="1100" height="250" alt="rio" class="header_image">                  
+                </div>                                        
+                    
+                <div class="mySlides fade">                    
+                    <img src="images/ceara.jpg" width="1100" height="250" alt="ceara" class="header_image">                  
+                </div>    
+                    
+                <div class="mySlides fade">                    
+                    <img src="images/flag.jpg" width="1100" height="250" alt="flag" class="header_image">                  
+                </div>                       
+                
+                </div>
+                
+                <noscript>Please enable javascript if you want the full, awesome web experience.</noscript>
+           
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+
+                    function showSlides() {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");                        
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                        }
+                        slideIndex++;
+                        if (slideIndex > slides.length) {slideIndex = 1}    
+                        
+                        slides[slideIndex-1].style.display = "block";                          
+                        setTimeout(showSlides, 3000); // Change image every 3 seconds
+                    }
+                    
+                </script>
+                              
+                
+            </header>  
+        
+        <!--*************** HEADER ENDS ***************-->
+            
+            <!--*************** NAVEGATION BEGINS ***************-->
+        
+            <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><span>Destinations</span>
+                    <ul>
+                        <li><a href="north.html">North</a></li>
+                        <li><a href="northeast.html">Northeast</a></li>
+                        <li><a href="midwest.html">Midwest</a></li>
+                        <li><a href="southeast.html">Southeast</a></li> 
+                        <li><span class="navcurrent">South</span></li>
+                        
+                    </ul>
+                </li>
+                <li><span>Events</span>
+                    <ul>
+                        <li><a href="carnaval.html">Carnival</a></li>
+                        <li><a href="nataluz.html">Natal Luz</a></li>
+                        <li><a href="artbienal.html">Art Biennial</a></li>
+                        <li><a href="newyear.html">New Year's Eve</a></li>
+                    </ul>
+                </li>
+                <li><span>Planning</span>
+                    <ul>
+                        <li><a href="wheater.html">Wheater</a></li>
+                        <li><a href="visaanddocs.html">Visa and Docs</a></li>
+                        <li><a href="language.html">Language</a></li>
+                        <li><a href="security.html">Security</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>            
+            </ul>
+        </nav>
+        
+        <!--*************** NAVEGATION ENDS ***************-->           
+            
+        
+        <!--*************** CONTENT BEGINS ***************-->
+        
+            <main>
+                
+                <div class="div_page">
+                    
+                <h1>City of Foz do Iguaçu</h1>
+                
+                <p>At the western end of the state of Paraná you will find Foz do Iguaçu, one of the most picturesque cities of the country, thanks to the majestic 275 waterfalls that form the Iguaçu Falls.<br><br> Located on the border between Brazil and Argentina, in the Iguaçu National Park, the Falls attract hundreds of thousands of visitors from all over the world.<br><br>
+
+                Declared as a Natural World Heritage Site by Unesco, the Park had its Falls selected as one of the New Seven Natural Wonders of the World, and protects species of endangered fauna and flora, such as jaguars and araucarias.<br><br> There you can visit Garganta do Diabo (the Devil’s Throat), the largest of the waterfalls, measuring 90 m tall.</p>
+                
+                <h2>Place to go:</h2>                
+                
+                <h3>Parque Nacional de Iguaçu (Iguaçu National Park)</h3>
+                <img src="images/foz.jpg" width="466" height="311" alt="foz do iguacu" class="imagedestinations"> 
+                <p>The main attraction of the Iguaçu National Park is the 275 waterfalls existed for 150 million years are part of the impressive landscape of Iguazu Falls (strong water in Tupi-Guarani language).<br><br>
+
+                Located 17 km from the city of Foz do Iguaçu, state of Paraná, it borders with Argentina and Paraguay. The park is listed as Natural Heritage of Humanity by UNESCO and the waterfalls were selected as one of the New Seven Wonders of Nature.<br><br>
+               
+                Over 1,700 km² of area, you can choose for several tours such as nice trails that you can experience the nature, radical adventures for ecotourism lovers or a lunch overlooking the splendid waterfall.</p>
+                    
+                </div>
+                
+                <div class="div_page">
+                
+                <h1>City of Gramado</h1>
+                
+                <p>Gramado is a city that awakens all the senses! The smell of chocolate and fondue is everywhere, inviting gastronomic experiences in cafes, restaurants, and chocolate factories along the streets, especially in winter (June to September), when the thermometers reach 0°C.<br><br>
+                
+                The Bavarian-inspired and timber framed architecture will delight your eyes with the romanticism of the facades.<br><br> The gardens of hydrangeas and the beautiful nature of the the town also enchant visitors. The songs, of traditional German, Italian, and gaúcho origin and the accents make you enter the atmosphere of a very Brazilian Europe.<br><br> The spas and the various hotels of the city complement the experience offering so much comfort and relaxation at the top of the Serra Gaúcha.</p>
+                
+                <h2>Place to go:</h2>
+                
+                <h3>Mundo de Chocolate</h3>
+                <img src="images/gramado.jpg" width="400" height="300" alt="gramado" class="imagedestinations"> 
+                <p>Mundo de Chocolate is in Gramado and has a collection of more than 200 pieces made with solid chocolate.<br><br> It has 3 thousand m² and 30 tons of this sweet so desired, transformed into sculptures that recall the famous postcards and include also animals, decorative objects, furniture, shoes, and even a Buddha.<br><br>
+
+                The pieces exhibited are impressive by their wealth of details, as can be seen in replicas of Christ the Redeemer, the Statue of Liberty, the Egyptian pyramids, the Taj Mahal, among others.<br><br>
+                
+                With so much chocolate in sight, be sure to make yours! The factory of Mundo de Chocolate offers a space and all the tools for this activity.</p>
+                    
+                </div>
+                
+            </main>
+        
+        <!--*************** CONTENT ENDS ***************-->
+        
+        
+        <!--*************** FOOTER BEGINS ***************-->
+        
+           <footer> 
+                <hr>
+                <p>Copyleft &copy; Let's go to Brazil - Tourism Agency 2018</p>
+                <ul class="footer-nav">                      
+                    <li><a href="sitemap.html">Site Map</a></li>                       
+                    <li><a href="contact.html">Contact us</a></li>
+                   </ul>
+            
+            </footer>
+        
+        <!--*************** FOOTER ENDS ***************-->
+        </div>
+	</body>
+</html>
