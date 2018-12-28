@@ -1,0 +1,270 @@
+/* html rules 
+----------------------*/
+body {
+    margin: 0;
+    background-color: #fbf9f3;    
+}
+
+header {    
+    padding: 20px;
+    margin-top: 30px;    
+    height: 250px;    
+}
+
+h1 {
+    color: #009b3a; 
+    font-size: 2.1em;
+}
+
+h2 {
+    color:#FFDE00;
+    font-size: 1.8em;    
+}
+
+h3 {
+    color: #097054;
+    font-size: 1.6em;    
+}
+
+p {
+    font-size: 1.2em;    
+}
+
+nav {    
+    padding: 0;    
+    margin: 0; 
+    margin-left: 20px;
+    width: 95%;
+    height: 80px;
+    list-style: none;    
+    float: left;      
+}
+
+
+nav li {
+    position: relative;    
+    float: left;    
+    display: block;
+    width: auto;
+    text-align: center;     
+}
+
+nav li a:link, nav li a:visited {    
+    color: #3366CC;
+    background-color: #fbf9f3;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 15px;     
+    display: block;    
+}
+
+nav li a:hover, nav li a:active {
+    text-decoration: none;
+    background-color: #fbf9f3;
+    color: #3366CC;    
+    border-bottom: 2px solid #3366CC;
+    transition: border-bottom 0.2s;
+}
+
+nav li ul {     
+    position: absolute;  
+    display: none;    
+    margin: 0;
+    padding: 0;    
+    font-size: 0.9em; 
+    
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+nav li ul li {    
+    display: block;
+    width: 100%;    
+}
+
+.navcurrent {
+    color: black; 
+    background-color: #fbf9f3;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 15px;     
+    display: block;
+}
+
+span {
+    color: #3366CC;    
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 15px;    
+    display: block;    
+}
+
+.span_sitemap {
+    font-size: 1.0em;
+}
+
+
+main {
+    background-color: #fbf9f3;
+    padding: 80px;
+    margin: 0; 
+}
+
+
+footer {   
+    padding: 20px;
+    margin-bottom: 30px;
+    text-align: center;     
+}
+
+footer ul li {
+    display: inline-block;    
+}
+
+footer ul li a:link, footer ul li a:visited {
+    color: #3366CC;
+    text-decoration: none;
+    font-weight: bold;    
+}
+
+footer ul li a:hover, footer ul li a:active {
+    text-decoration: none;    
+    color: #aea691;   
+}
+
+.footer-nav {
+    font-size: 1em;
+}
+
+
+table {
+    margin: auto;
+    border: 5px solid #aea691;
+    border-spacing: 0;
+}
+
+td {
+    font-size: 1.3em;    
+    padding: 0.5em;
+    border-style: none;
+    font-weight: bold;
+}
+
+.altrow {
+    background-color: #d9d3c6;
+}
+
+form {
+    margin: auto;
+    font-family: Arial, sans-serif;    
+}
+
+label {
+    display: inline-block;
+    float: left;
+    width: 100px;
+    clear: left;
+    text-align: left;    
+    margin-top: 15px;
+}
+
+input, textarea {
+    margin-top: 15px;
+    display: block;
+}
+
+fieldset {    
+    border: 2px ridge #aea691;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+a:link {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    color: #3366CC;
+}
+
+a:hover, a:active {
+    font-weight: bold;
+    text-decoration: none;
+    color: #aea691;    
+}
+
+.header_image {
+    width: 100%;    
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;    
+}
+
+
+.div_page {
+    margin: 5px;
+    padding: 7px;     
+}
+
+.imagedestinations {
+    float: right;
+    margin: 10px;
+    padding: 7px;    
+}
+
+.ul_security {
+    font-size: 18px;    
+}
+
+.ul_li_security {
+    margin: 20px 0 20px 0;
+}
+
+
+#wrapper {
+    width: 80%;    
+    margin: auto;
+    text-align: left;
+    font-size: 1em;
+    font-family: arial, helvetica, sans-serif;    
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 90%; 
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
